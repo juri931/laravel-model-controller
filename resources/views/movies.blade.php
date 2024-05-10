@@ -3,13 +3,17 @@
 @section('content')
     <div class="container">
         <h1>I miei film</h1>
+        @foreach ($movies as $movie)
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">{{ $movie->title }}</h5>
+                <p class="card-text">Titolo originale: {{ $movie->original_title }}</p>
+                <p class="card-text">Nazionalità: {{ $movie->nationality }}</p>
+                <p class="card-text">Data uscita: {{ $movie->date }}</p>
+                <p class="card-text">Voto: {{ $movie->vote }}</p>
             </div>
         </div>
+
+        @endforeach
     </div>
 @endsection

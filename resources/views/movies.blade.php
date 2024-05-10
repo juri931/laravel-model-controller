@@ -1,8 +1,8 @@
 @extends('layout.main')
 
 @section('content')
+    <h1>I miei film</h1>
     <div class="container">
-        <h1>I miei film</h1>
         @foreach ($movies as $movie)
         <div class="card" style="width: 18rem;">
             <div class="card-body">

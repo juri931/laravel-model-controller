@@ -10,6 +10,5 @@
           <li class="nav-item">
             <a href="{{route('home')}}">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="{{route('movies')}}">I miei film</a>
+
 </header>
